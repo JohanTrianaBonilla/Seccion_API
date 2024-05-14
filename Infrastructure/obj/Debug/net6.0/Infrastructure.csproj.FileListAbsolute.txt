@@ -1,0 +1,14 @@
+C:\Multiplataforma\SeccionApi\Infrastructure\obj\Debug\net6.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Multiplataforma\SeccionApi\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Multiplataforma\SeccionApi\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfo.cs
+C:\Multiplataforma\SeccionApi\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Multiplataforma\SeccionApi\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Multiplataforma\SeccionApi\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
+C:\Multiplataforma\SeccionApi\Infrastructure\bin\Debug\net6.0\Infrastructure.runtimeconfig.json
+C:\Multiplataforma\SeccionApi\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
+C:\Multiplataforma\SeccionApi\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
+C:\Multiplataforma\SeccionApi\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
+C:\Multiplataforma\SeccionApi\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
+C:\Multiplataforma\SeccionApi\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
+C:\Multiplataforma\SeccionApi\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache
+C:\Multiplataforma\SeccionApi\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll

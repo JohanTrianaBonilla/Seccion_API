@@ -12,12 +12,12 @@ namespace Business.Interfaces
     {
         List<EstudianteView> ConsultarEstudiantes();
 
-        public EstudianteView Buscar(String Id);
+        public EstudianteView Buscar(string Id);
 
-        public String Eliminar(String id);
+        public String Eliminar(string id);
 
-        public string Agregar(Estudiante Registro);
+        public string Agregar(string Id, int IdCarrea, string Nombre, string Apellido, DateTime FechaNacimiento);
 
-        public String Actualizar(String Id, Estudiante registro);
+        public String Actualizar(string Id, EstudianteView estudiante);
     }
 }

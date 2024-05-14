@@ -71,3 +71,4 @@ C:\Multiplataforma\SeccionApi\SeccionApi\bin\Debug\net6.0\Business.dll
 C:\Multiplataforma\SeccionApi\SeccionApi\bin\Debug\net6.0\Core.dll
 C:\Multiplataforma\SeccionApi\SeccionApi\bin\Debug\net6.0\Business.pdb
 C:\Multiplataforma\SeccionApi\SeccionApi\bin\Debug\net6.0\Core.pdb
+C:\Multiplataforma\SeccionApi\SeccionApi\obj\Debug\net6.0\SeccionApi.sourcelink.json

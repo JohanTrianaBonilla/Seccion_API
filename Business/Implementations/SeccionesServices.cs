@@ -82,8 +82,8 @@ namespace Business.Implementations
                 Hora  = Registro.Hora,  
                 Aula = Registro.Aula,   
                 Cupos = Registro.Cupos,
-                IdClaseNavigation = Registro.IdClaseNavigation,
-                IdMaestroNavigation = Registro.IdMaestroNavigation,
+                //IdClaseNavigation = Registro.IdClaseNavigation,
+                //IdMaestroNavigation = Registro.IdMaestroNavigation,
             };
             _dbcontext.Secciones.Add(item);
             _dbcontext.SaveChanges();

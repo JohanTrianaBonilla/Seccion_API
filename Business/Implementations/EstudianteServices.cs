@@ -58,32 +58,58 @@ namespace Business.Implementations
             return mestudianteView;
         }
 
-        public String Actualizar(String Id, Estudiante registro)
+        public String Actualizar(String Id, EstudianteView estudiante)
         {
-            var estudiante = _dbcontext.Estudiantes.Find(Id);
-            estudiante.Id = registro.Id;
-            estudiante.IdCarrera = registro.IdCarrera;
-            estudiante.Nombre = registro.Nombre;
-            estudiante.Apellido = registro.Apellido;
-            estudiante.FechaNacimiento = registro.FechaNacimiento;
+            var estudianteExiste = _dbcontext.Estudiantes.Find(Id);
+            if(estudianteExiste == null)
+            {
+                throw new Exception("El estudiante no existe");
+            }
+            estudianteExiste.Id = estudiante.Id;
+            estudianteExiste.IdCarrera = estudiante.IdCarrera;
+            estudianteExiste.Nombre = estudiante.Nombre;
+            estudianteExiste.Apellido = estudiante.Apellido;
+            estudianteExiste.FechaNacimiento = estudiante.FechaNacimiento;
             _dbcontext.SaveChanges();
             return estudiante.Id;
+
+            //estudiante.Id = registro.Id;
+            //estudiante.IdCarrera = registro.IdCarrera;
+            //estudiante.Nombre = registro.Nombre;
+            //estudiante.Apellido = registro.Apellido;
+            //estudiante.FechaNacimiento = registro.FechaNacimiento;
+            //_dbcontext.SaveChanges();
+            //return estudiante.Id;
         }
 
-        public string Agregar(Estudiante Registro)
+        public string Agregar(string Id, int IdCarrea, string Nombre, string Apellido, DateTime FechaNacimientoo)
         {
             var item = new Estudiante
             {
-                Id = Registro.Id,
-                IdCarrera = Registro.IdCarrera,
-                Nombre = Registro.Nombre,
-                Apellido = Registro.Apellido,
-                FechaNacimiento = Registro.FechaNacimiento,
+                Id = Id,
+                IdCarrera = IdCarrea,
+                Nombre = Nombre,
+                Apellido = Apellido,
+                FechaNacimiento = FechaNacimientoo,
+
             };
             _dbcontext.Estudiantes.Add(item);
             _dbcontext.SaveChanges();
 
             return item.Id;
+
+            //var item = new Estudiante
+            //{
+            //    Id = Registro.Id,
+            //    IdCarrera = Registro.IdCarrera,
+            //    Nombre = Registro.Nombre,
+            //    Apellido = Registro.Apellido,
+            //    FechaNacimiento = Registro.FechaNacimiento,
+            //};
+            //_dbcontext.Estudiantes.Add(item);
+            //_dbcontext.SaveChanges();
+
+            //return item.Id;
         }
         public string Eliminar(string Id)
         {

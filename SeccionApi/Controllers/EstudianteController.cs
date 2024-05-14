@@ -1,6 +1,7 @@
 ﻿using Business.Interfaces;
 using Infrastructure.Models;
 using Microsoft.AspNetCore.Mvc;
+using Core.ModelView;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -53,34 +54,55 @@ namespace SeccionApi.Controllers
 
         // POST api/<EstudianteController>
         [HttpPost]
-        public async Task<ActionResult> Post(Estudiante registro)
+        public async Task<ActionResult> Post( string Id,int IdCarrea, string Nombre, string Apellido, DateTime FechaNacimiento)
         {
             try
             {
-                String estudiante = "";
-                estudiante = _Estudiante.Agregar(registro);
-                return Ok(estudiante);
-            }
-            catch (Exception ex)
+                var nuevoEstudiante = _Estudiante.Agregar(Id, IdCarrea, Nombre, Apellido, FechaNacimiento);
+
+                return Ok(nuevoEstudiante);
+                //return CreatedAtAction(nameof(GetById), new { id = nuevoEstudiante.Id}, nuevoEstudiante);
+            }catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
+
+            //try
+            //{
+            //    String estudiante = "";
+            //    estudiante = _Estudiante.Agregar(registro);
+            //    return Ok(estudiante);
+            //}
+            //catch (Exception ex)
+            //{
+            //    return BadRequest(ex.Message);
+            //}
         }
 
-        // PUT api/<EstudianteController>/5
-        [HttpPut("{Id}")]
-        public async Task<IActionResult> put(String Id, Estudiante registro)
+            // PUT api/<EstudianteController>/5
+            [HttpPut("{Id}")]
+        public async Task<IActionResult> put(String Id, [FromBody] EstudianteView estudiante)
         {
+
             try
             {
-                String estudiante = "";
-                estudiante = _Estudiante.Actualizar(Id, registro);
-                return Ok(estudiante);
-            }
-            catch (Exception ex)
+                var estudianteActualizado = _Estudiante.Actualizar(Id, estudiante);
+                return Ok(estudianteActualizado);
+            }catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
+
+            //try
+            //{
+            //    String estudiante = "";
+            //    estudiante = _Estudiante.Actualizar(Id, registro);
+            //    return Ok(estudiante);
+            //}
+            //catch (Exception ex)
+            //{
+            //    return BadRequest(ex.Message);
+            //}
 
         }
 

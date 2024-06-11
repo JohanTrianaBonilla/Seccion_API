@@ -16,8 +16,8 @@ namespace Business.Interfaces
 
         public String Eliminar(String id);
 
-        public string Agregar(Seccione Registro);
+        public string Agregar(SeccionesView registro);
 
-        public String Actualizar(String Id, Seccione registro);
+        public String Actualizar(String id, SeccionesView registro);
     }
 }

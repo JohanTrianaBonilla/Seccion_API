@@ -5,6 +5,7 @@ C:\Multiplataforma\SeccionApi\Core\obj\Debug\net6.0\Core.GeneratedMSBuildEditorC
 C:\Multiplataforma\SeccionApi\Core\obj\Debug\net6.0\Core.AssemblyInfoInputs.cache
 C:\Multiplataforma\SeccionApi\Core\obj\Debug\net6.0\Core.AssemblyInfo.cs
 C:\Multiplataforma\SeccionApi\Core\obj\Debug\net6.0\Core.csproj.CoreCompileInputs.cache
+C:\Multiplataforma\SeccionApi\Core\obj\Debug\net6.0\Core.sourcelink.json
 C:\Multiplataforma\SeccionApi\Core\obj\Debug\net6.0\Core.dll
 C:\Multiplataforma\SeccionApi\Core\obj\Debug\net6.0\refint\Core.dll
 C:\Multiplataforma\SeccionApi\Core\obj\Debug\net6.0\Core.pdb

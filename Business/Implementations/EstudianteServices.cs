@@ -1,6 +1,7 @@
 ﻿using Business.Interfaces;
 using Core.ModelView;
 using Infrastructure.Models;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -65,58 +66,53 @@ namespace Business.Implementations
             {
                 throw new Exception("El estudiante no existe");
             }
-            estudianteExiste.Id = estudiante.Id;
-            estudianteExiste.IdCarrera = estudiante.IdCarrera;
-            estudianteExiste.Nombre = estudiante.Nombre;
-            estudianteExiste.Apellido = estudiante.Apellido;
-            estudianteExiste.FechaNacimiento = estudiante.FechaNacimiento;
-            _dbcontext.SaveChanges();
-            return estudiante.Id;
-
-            //estudiante.Id = registro.Id;
-            //estudiante.IdCarrera = registro.IdCarrera;
-            //estudiante.Nombre = registro.Nombre;
-            //estudiante.Apellido = registro.Apellido;
-            //estudiante.FechaNacimiento = registro.FechaNacimiento;
-            //_dbcontext.SaveChanges();
-            //return estudiante.Id;
+            else
+            {
+                estudianteExiste.IdCarrera = estudiante.IdCarrera;
+                estudianteExiste.Nombre = estudiante.Nombre;
+                estudianteExiste.Apellido = estudiante.Apellido;
+                estudianteExiste.FechaNacimiento = estudiante.FechaNacimiento;
+                _dbcontext.SaveChanges();
+                return estudiante.Id;
+            }
         }
 
         public string Agregar(string Id, int IdCarrea, string Nombre, string Apellido, DateTime FechaNacimientoo)
         {
-            var item = new Estudiante
+            var estudiante = _dbcontext.Estudiantes.Find(Id);
+            if (estudiante != null)
             {
-                Id = Id,
-                IdCarrera = IdCarrea,
-                Nombre = Nombre,
-                Apellido = Apellido,
-                FechaNacimiento = FechaNacimientoo,
-
-            };
-            _dbcontext.Estudiantes.Add(item);
-            _dbcontext.SaveChanges();
-
-            return item.Id;
-
-            //var item = new Estudiante
-            //{
-            //    Id = Registro.Id,
-            //    IdCarrera = Registro.IdCarrera,
-            //    Nombre = Registro.Nombre,
-            //    Apellido = Registro.Apellido,
-            //    FechaNacimiento = Registro.FechaNacimiento,
-            //};
-            //_dbcontext.Estudiantes.Add(item);
-            //_dbcontext.SaveChanges();
-
-            //return item.Id;
+                throw new Exception("El estudiante ya existe en la base de datos");
+            }
+            else
+            {
+                var item = new Estudiante
+                {
+                    Id = Id,
+                    IdCarrera = IdCarrea,
+                    Nombre = Nombre,
+                    Apellido = Apellido,
+                    FechaNacimiento = FechaNacimientoo,
+                };
+                _dbcontext.Estudiantes.Add(item);
+                _dbcontext.SaveChanges();
+                return item.Id;
+            }
         }
         public string Eliminar(string Id)
         {
             var Estudiante = _dbcontext.Estudiantes.Find(Id);
-            _dbcontext.Estudiantes.Remove(Estudiante);
-            _dbcontext.SaveChanges();
-            return Id;
+            if (Estudiante == null)
+            {
+                throw new Exception("El estudiante que intenta eliminar no existe en la base de datos");
+            }
+            else
+            {
+                _dbcontext.Estudiantes.Remove(Estudiante);
+                _dbcontext.SaveChanges();
+                return Id;
+            }
+
         }
     }
 }

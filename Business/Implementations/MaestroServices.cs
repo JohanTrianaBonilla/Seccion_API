@@ -54,39 +54,52 @@ namespace Business.Implementations
 
             return maestroWiew;
         }
-
-
-        public String Actualizar(String Id, Maestro registro)
+        //se modifico aca 
+        public String Actualizar(String Id, MaestroWiew registro)
         {
             var maestro = _dbcontext.Maestros.Find(Id);
-            maestro.Id = registro.Id;
-            maestro.Nombre = registro.Nombre;
-            maestro.Apellido = registro.Apellido;
-            
-            _dbcontext.SaveChanges();
-
-            return maestro.Id;
+            if(maestro != null)
+            {
+                throw new Exception("El Maestro no existe en la base de datos");
+            }
+            else
+            {
+                maestro.Nombre = registro.Nombre;
+                maestro.Apellido = registro.Apellido;
+                _dbcontext.SaveChanges();
+                return maestro.Id;
+            }
         }
 
-        //asnotraquin
-        public string Agregar(Maestro Registro)
+        //se modifico aca tambien la funcion agregar
+        public string Agregar(MaestroWiew Registro)
         {
-            var item = new Maestro
+            var maestro = _dbcontext.Maestros.Find(Registro.Id);
+            if (maestro != null)
             {
-                Id= Registro.Id,
-                Nombre = Registro.Nombre,
-                Apellido = Registro.Apellido,
-            };
-            _dbcontext.Maestros.Add(item);
-            _dbcontext.SaveChanges();
-
-            return item.Id;
-
+                throw new Exception("El maestro ya existe en la base de datos");
+            }
+            else
+            {
+                var item = new Maestro
+                {
+                    Id = Registro.Id,
+                    Nombre = Registro.Nombre,
+                    Apellido = Registro.Apellido,
+                };
+                _dbcontext.Maestros.Add(item);
+                _dbcontext.SaveChanges();
+                return item.Id;
+            }
         }
 
         public string Eliminar(string Id)
         {
             var Maestro = _dbcontext.Maestros.Find(Id);
+            if (Maestro == null)
+            {
+                throw new Exception("El Maestro no existe en la base de datos");
+            }
             _dbcontext.Maestros.Remove(Maestro);
             _dbcontext.SaveChanges();
             return Id;

@@ -16,8 +16,8 @@ namespace Business.Interfaces
 
         public int Eliminar(int id);
 
-        public int Agregar(Matricula Registro);
+        public int Agregar(int Id, string IdEstudiante, string IdSeccion);
 
-        public int Actualizar(int Id, Matricula registro);
+        public int Actualizar(int Id, MatriculaView registro);
     }
 }

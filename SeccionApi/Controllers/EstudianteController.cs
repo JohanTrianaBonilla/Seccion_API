@@ -59,28 +59,15 @@ namespace SeccionApi.Controllers
             try
             {
                 var nuevoEstudiante = _Estudiante.Agregar(Id, IdCarrea, Nombre, Apellido, FechaNacimiento);
-
                 return Ok(nuevoEstudiante);
-                //return CreatedAtAction(nameof(GetById), new { id = nuevoEstudiante.Id}, nuevoEstudiante);
             }catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
-
-            //try
-            //{
-            //    String estudiante = "";
-            //    estudiante = _Estudiante.Agregar(registro);
-            //    return Ok(estudiante);
-            //}
-            //catch (Exception ex)
-            //{
-            //    return BadRequest(ex.Message);
-            //}
         }
 
-            // PUT api/<EstudianteController>/5
-            [HttpPut("{Id}")]
+        // PUT api/<EstudianteController>/5
+        [HttpPut("{Id}")]
         public async Task<IActionResult> put(String Id, [FromBody] EstudianteView estudiante)
         {
 

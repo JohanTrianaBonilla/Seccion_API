@@ -1,6 +1,7 @@
 ﻿using Business.Interfaces;
-using Infrastructure.Models;
+using Core.ModelView;
 using Microsoft.AspNetCore.Mvc;
+using System.Globalization;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -52,12 +53,11 @@ namespace SeccionApi.Controllers
 
         // POST api/<MatriculaController>
         [HttpPost]
-        public async Task<ActionResult> Post(Matricula registro)
+        public async Task<ActionResult> Post(int Id, string IdEstudiante, string IdSeccion)
         {
             try
             {
-                int matricula = 0;
-                matricula = _Matricula.Agregar(registro);
+                var matricula = _Matricula.Agregar(Id, IdEstudiante, IdSeccion);
                 return Ok(matricula);
             }
             catch (Exception ex)
@@ -68,13 +68,13 @@ namespace SeccionApi.Controllers
 
         // PUT api/<MatriculaController>/5
         [HttpPut("{Id}")]
-        public async Task<IActionResult> put(int Id, Matricula registro)
+        public async Task<IActionResult> put(int Id, [FromBody] MatriculaView registro)
         {
             try
             {
-                int matricula = 0;
-                matricula = _Matricula.Actualizar(Id, registro);
-                return Ok(matricula);
+               
+               var matriculaActualizada = _Matricula.Actualizar(Id, registro);
+                return Ok(matriculaActualizada);
             }
             catch (Exception ex)
             {

@@ -18,6 +18,6 @@ namespace Business.Interfaces
 
         public string Agregar(string Id, int IdCarrea, string Nombre, string Apellido, DateTime FechaNacimiento);
 
-        public String Actualizar(string Id, EstudianteView estudiante);
+        public String Actualizar(string Id, EstudianteView estudiante); 
     }
 }

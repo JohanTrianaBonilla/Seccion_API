@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Business.Implementations
 {
@@ -58,47 +58,63 @@ namespace Business.Implementations
             };
             return seccionesView;
         }
-        public String Actualizar(String Id, Seccione registro)
+        public String Actualizar(String Id, SeccionesView registro)
         {
             var secion = _dbcontext.Secciones.Find(Id);
-            secion.Id = registro.Id;
-            secion.IdClase = registro.IdClase;
-            secion.IdMaestro = registro.IdMaestro;
-            secion.Hora = registro.Hora;
-            secion.Aula = registro.Aula;
-            secion.Cupos = registro.Cupos;
-            _dbcontext.SaveChanges();
-            return secion.Id;
+            if (secion == null )
+            {
+                throw new Exception("La seccion no existe en la base de datos");
+            }
+            else
+            {
+                secion.IdClase = registro.IdClase;
+                secion.IdMaestro = registro.IdMaestro;
+                secion.Hora = registro.Hora;
+                secion.Aula = registro.Aula;
+                secion.Cupos = registro.Cupos;
+                _dbcontext.SaveChanges();
+                return secion.Id;
+            }
         }
 
-        public string Agregar(Seccione Registro)
+        public string Agregar(SeccionesView Registro)
         {
-            
-            var item = new Seccione
+
+            var seccion = _dbcontext.Secciones.Find(Registro.Id);
+            if (seccion != null)
             {
-                Id = Registro.Id,
-                IdClase = Registro.IdClase,
-                IdMaestro = Registro.IdMaestro,
-                Hora  = Registro.Hora,  
-                Aula = Registro.Aula,   
-                Cupos = Registro.Cupos,
-                //IdClaseNavigation = Registro.IdClaseNavigation,
-                //IdMaestroNavigation = Registro.IdMaestroNavigation,
-            };
-            _dbcontext.Secciones.Add(item);
-            _dbcontext.SaveChanges();
-    
-            return item.Id;
+                throw new Exception("La seccion ya existe en la base de datos");
+            }
+            else
+            {
+                var item = new Seccione
+                {
+                    Id = Registro.Id,
+                    IdMaestro = Registro.IdMaestro,
+                    IdClase = Registro.IdClase,
+                    Hora = Registro.Hora,
+                    Aula = Registro.Aula,
+                    Cupos = Registro.Cupos,
+                };
+                _dbcontext.Secciones.Add(item);
+                _dbcontext.SaveChanges();
+                return item.Id;
+            }
         }
 
         public string Eliminar(string Id)
         {
             var seccion = _dbcontext.Secciones.Find(Id);
-            _dbcontext.Secciones.Remove(seccion);
-            _dbcontext.SaveChanges();
-            return Id;
-
+            if (seccion == null)
+            {
+                throw new Exception("La seccion que intenta eliminar no existe en la base de datos");
+            }
+            else
+            {
+                _dbcontext.Secciones.Remove(seccion);
+                _dbcontext.SaveChanges();
+                return Id;
+            }
         }
-
     }
 }

@@ -10,5 +10,12 @@ namespace Business.Interfaces
     public interface IClaseServices
     {
         List<ClaseView> ConsultarClases();
+        public ClaseView Buscar(int Id);
+        public int Agregar(ClaseView Registro);
+        public int Actualizar(int Codigo, ClaseView registro);
+        public int Eliminar(int Codigo);
+
+
+
     }
 }

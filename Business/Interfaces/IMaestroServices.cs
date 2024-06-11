@@ -20,9 +20,9 @@ namespace Business.Interfaces
 
         public String Eliminar(String id);
 
-        public string Agregar(Maestro Registro);
+        public string Agregar(MaestroWiew Registro);
 
-        public String Actualizar(String Id, Maestro registro);
+        public String Actualizar(String Id, MaestroWiew registro);
        
     }
 }

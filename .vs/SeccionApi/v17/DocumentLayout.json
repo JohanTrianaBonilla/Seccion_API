@@ -3,52 +3,52 @@
   "WorkspaceRootPath": "C:\\Multiplataforma\\SeccionApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{39B8EB03-15D6-4D4C-99DF-E563D3736078}|SeccionApi\\SeccionApi.csproj|c:\\multiplataforma\\seccionapi\\seccionapi\\controllers\\estudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39B8EB03-15D6-4D4C-99DF-E563D3736078}|SeccionApi\\SeccionApi.csproj|solutionrelative:seccionapi\\controllers\\estudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C730399-BD51-4401-B7E9-EE141B7A5E05}|Business\\Business.csproj|c:\\multiplataforma\\seccionapi\\business\\implementations\\claseservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C730399-BD51-4401-B7E9-EE141B7A5E05}|Business\\Business.csproj|solutionrelative:business\\implementations\\claseservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C730399-BD51-4401-B7E9-EE141B7A5E05}|Business\\Business.csproj|c:\\multiplataforma\\seccionapi\\business\\interfaces\\iestudianteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C730399-BD51-4401-B7E9-EE141B7A5E05}|Business\\Business.csproj|solutionrelative:business\\interfaces\\iestudianteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C730399-BD51-4401-B7E9-EE141B7A5E05}|Business\\Business.csproj|c:\\multiplataforma\\seccionapi\\business\\implementations\\estudianteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C730399-BD51-4401-B7E9-EE141B7A5E05}|Business\\Business.csproj|solutionrelative:business\\implementations\\estudianteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39B8EB03-15D6-4D4C-99DF-E563D3736078}|SeccionApi\\SeccionApi.csproj|c:\\multiplataforma\\seccionapi\\seccionapi\\controllers\\seccioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39B8EB03-15D6-4D4C-99DF-E563D3736078}|SeccionApi\\SeccionApi.csproj|solutionrelative:seccionapi\\controllers\\seccioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C730399-BD51-4401-B7E9-EE141B7A5E05}|Business\\Business.csproj|c:\\multiplataforma\\seccionapi\\business\\implementations\\seccionesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C730399-BD51-4401-B7E9-EE141B7A5E05}|Business\\Business.csproj|solutionrelative:business\\implementations\\seccionesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE05568B-E214-4A28-9892-DEFA0D292958}|Infrastructure\\Infrastructure.csproj|c:\\multiplataforma\\seccionapi\\infrastructure\\models\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE05568B-E214-4A28-9892-DEFA0D292958}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\models\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C730399-BD51-4401-B7E9-EE141B7A5E05}|Business\\Business.csproj|c:\\multiplataforma\\seccionapi\\business\\interfaces\\iseccionesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C730399-BD51-4401-B7E9-EE141B7A5E05}|Business\\Business.csproj|solutionrelative:business\\interfaces\\iseccionesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:1:0:{FE05568B-E214-4A28-9892-DEFA0D292958}|Infrastructure\\Infrastructure.csproj|c:\\multiplataforma\\seccionapi\\infrastructure\\models\\seccione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:1:0:{FE05568B-E214-4A28-9892-DEFA0D292958}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\models\\seccione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C730399-BD51-4401-B7E9-EE141B7A5E05}|Business\\Business.csproj|c:\\multiplataforma\\seccionapi\\business\\implementations\\matriculaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C730399-BD51-4401-B7E9-EE141B7A5E05}|Business\\Business.csproj|solutionrelative:business\\implementations\\matriculaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:2:0:{FE05568B-E214-4A28-9892-DEFA0D292958}|Infrastructure\\Infrastructure.csproj|c:\\multiplataforma\\seccionapi\\infrastructure\\models\\seccione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:2:0:{FE05568B-E214-4A28-9892-DEFA0D292958}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\models\\seccione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C730399-BD51-4401-B7E9-EE141B7A5E05}|Business\\Business.csproj|c:\\multiplataforma\\seccionapi\\business\\implementations\\estudianteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C730399-BD51-4401-B7E9-EE141B7A5E05}|Business\\Business.csproj|solutionrelative:business\\implementations\\estudianteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE05568B-E214-4A28-9892-DEFA0D292958}|Infrastructure\\Infrastructure.csproj|c:\\multiplataforma\\seccionapi\\infrastructure\\models\\maestro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE05568B-E214-4A28-9892-DEFA0D292958}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\models\\maestro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C730399-BD51-4401-B7E9-EE141B7A5E05}|Business\\Business.csproj|c:\\multiplataforma\\seccionapi\\business\\interfaces\\iestudianteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C730399-BD51-4401-B7E9-EE141B7A5E05}|Business\\Business.csproj|solutionrelative:business\\interfaces\\iestudianteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE05568B-E214-4A28-9892-DEFA0D292958}|Infrastructure\\Infrastructure.csproj|c:\\multiplataforma\\seccionapi\\infrastructure\\models\\universidadcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE05568B-E214-4A28-9892-DEFA0D292958}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\models\\universidadcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C730399-BD51-4401-B7E9-EE141B7A5E05}|Business\\Business.csproj|c:\\multiplataforma\\seccionapi\\business\\interfaces\\imatriculaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C730399-BD51-4401-B7E9-EE141B7A5E05}|Business\\Business.csproj|solutionrelative:business\\interfaces\\imatriculaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B8EB03-15D6-4D4C-99DF-E563D3736078}|SeccionApi\\SeccionApi.csproj|c:\\multiplataforma\\seccionapi\\seccionapi\\controllers\\matriculacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39B8EB03-15D6-4D4C-99DF-E563D3736078}|SeccionApi\\SeccionApi.csproj|solutionrelative:seccionapi\\controllers\\matriculacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B8EB03-15D6-4D4C-99DF-E563D3736078}|SeccionApi\\SeccionApi.csproj|c:\\multiplataforma\\seccionapi\\seccionapi\\controllers\\estudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39B8EB03-15D6-4D4C-99DF-E563D3736078}|SeccionApi\\SeccionApi.csproj|solutionrelative:seccionapi\\controllers\\estudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B8EB03-15D6-4D4C-99DF-E563D3736078}|SeccionApi\\SeccionApi.csproj|c:\\multiplataforma\\seccionapi\\seccionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39B8EB03-15D6-4D4C-99DF-E563D3736078}|SeccionApi\\SeccionApi.csproj|solutionrelative:seccionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39B8EB03-15D6-4D4C-99DF-E563D3736078}|SeccionApi\\SeccionApi.csproj|c:\\multiplataforma\\seccionapi\\seccionapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39B8EB03-15D6-4D4C-99DF-E563D3736078}|SeccionApi\\SeccionApi.csproj|solutionrelative:seccionapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39B8EB03-15D6-4D4C-99DF-E563D3736078}|SeccionApi\\SeccionApi.csproj|c:\\multiplataforma\\seccionapi\\seccionapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{39B8EB03-15D6-4D4C-99DF-E563D3736078}|SeccionApi\\SeccionApi.csproj|solutionrelative:seccionapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE05568B-E214-4A28-9892-DEFA0D292958}|Infrastructure\\Infrastructure.csproj|c:\\multiplataforma\\seccionapi\\infrastructure\\models\\clase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE05568B-E214-4A28-9892-DEFA0D292958}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\models\\clase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,157 +58,150 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EstudianteServices.cs",
-              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\Business\\Implementations\\EstudianteServices.cs",
-              "RelativeDocumentMoniker": "Business\\Implementations\\EstudianteServices.cs",
-              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\Business\\Implementations\\EstudianteServices.cs",
-              "RelativeToolTip": "Business\\Implementations\\EstudianteServices.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAcwDwAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T20:44:59.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IEstudianteServices.cs",
-              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\Business\\Interfaces\\IEstudianteServices.cs",
-              "RelativeDocumentMoniker": "Business\\Interfaces\\IEstudianteServices.cs",
-              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\Business\\Interfaces\\IEstudianteServices.cs",
-              "RelativeToolTip": "Business\\Interfaces\\IEstudianteServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T20:44:21.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EstudianteController.cs",
-              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\SeccionApi\\Controllers\\EstudianteController.cs",
-              "RelativeDocumentMoniker": "SeccionApi\\Controllers\\EstudianteController.cs",
-              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\SeccionApi\\Controllers\\EstudianteController.cs",
-              "RelativeToolTip": "SeccionApi\\Controllers\\EstudianteController.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAxwFcAAAANAAAA",
+              "Title": "ClaseServices.cs",
+              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\Business\\Implementations\\ClaseServices.cs",
+              "RelativeDocumentMoniker": "Business\\Implementations\\ClaseServices.cs",
+              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\Business\\Implementations\\ClaseServices.cs",
+              "RelativeToolTip": "Business\\Implementations\\ClaseServices.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAADcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T20:37:45.204Z",
+              "WhenOpened": "2024-06-08T21:52:01.527Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Seccione.cs",
-              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\Infrastructure\\Models\\Seccione.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Models\\Seccione.cs",
-              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\Infrastructure\\Models\\Seccione.cs",
-              "RelativeToolTip": "Infrastructure\\Models\\Seccione.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T20:33:16.472Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Estudiante.cs",
-              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\Infrastructure\\Models\\Estudiante.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Models\\Estudiante.cs",
-              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\Infrastructure\\Models\\Estudiante.cs",
-              "RelativeToolTip": "Infrastructure\\Models\\Estudiante.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T04:17:45.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "SeccionesServices.cs",
               "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\Business\\Implementations\\SeccionesServices.cs",
               "RelativeDocumentMoniker": "Business\\Implementations\\SeccionesServices.cs",
               "ToolTip": "C:\\Multiplataforma\\SeccionApi\\Business\\Implementations\\SeccionesServices.cs",
               "RelativeToolTip": "Business\\Implementations\\SeccionesServices.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAgwFQAAAASAAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAWwFAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T02:57:53.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T01:47:39.795Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Maestro.cs",
-              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\Infrastructure\\Models\\Maestro.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Models\\Maestro.cs",
-              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\Infrastructure\\Models\\Maestro.cs",
-              "RelativeToolTip": "Infrastructure\\Models\\Maestro.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAiwBMAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "ISeccionesServices.cs",
+              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\Business\\Interfaces\\ISeccionesServices.cs",
+              "RelativeDocumentMoniker": "Business\\Interfaces\\ISeccionesServices.cs",
+              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\Business\\Interfaces\\ISeccionesServices.cs",
+              "RelativeToolTip": "Business\\Interfaces\\ISeccionesServices.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwAoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T02:54:29.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T01:47:25.439Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Clase.cs",
-              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\Infrastructure\\Models\\Clase.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Models\\Clase.cs",
-              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\Infrastructure\\Models\\Clase.cs",
-              "RelativeToolTip": "Infrastructure\\Models\\Clase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAWAAAA",
+              "DocumentIndex": 1,
+              "Title": "SeccionController.cs",
+              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\SeccionApi\\Controllers\\SeccionController.cs",
+              "RelativeDocumentMoniker": "SeccionApi\\Controllers\\SeccionController.cs",
+              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\SeccionApi\\Controllers\\SeccionController.cs",
+              "RelativeToolTip": "SeccionApi\\Controllers\\SeccionController.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAqwDsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T02:52:11.62Z"
+              "WhenOpened": "2024-06-06T01:45:24.278Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "UniversidadContext.cs",
-              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\Infrastructure\\Models\\UniversidadContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Models\\UniversidadContext.cs",
-              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\Infrastructure\\Models\\UniversidadContext.cs",
-              "RelativeToolTip": "Infrastructure\\Models\\UniversidadContext.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAYwE0AAAA0AAAA",
+              "Title": "MatriculaController.cs",
+              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\SeccionApi\\Controllers\\MatriculaController.cs",
+              "RelativeDocumentMoniker": "SeccionApi\\Controllers\\MatriculaController.cs",
+              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\SeccionApi\\Controllers\\MatriculaController.cs",
+              "RelativeToolTip": "SeccionApi\\Controllers\\MatriculaController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA5wEUAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T19:08:03.218Z"
+              "WhenOpened": "2024-05-21T21:02:01.032Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Seccione.cs",
-              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\Infrastructure\\Models\\Seccione.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Models\\Seccione.cs",
-              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\Infrastructure\\Models\\Seccione.cs",
-              "RelativeToolTip": "Infrastructure\\Models\\Seccione.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAwAAAAvAAAA",
+              "DocumentIndex": 7,
+              "Title": "IMatriculaServices.cs",
+              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\Business\\Interfaces\\IMatriculaServices.cs",
+              "RelativeDocumentMoniker": "Business\\Interfaces\\IMatriculaServices.cs",
+              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\Business\\Interfaces\\IMatriculaServices.cs",
+              "RelativeToolTip": "Business\\Interfaces\\IMatriculaServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T19:06:56.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T20:58:54.881Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\SeccionApi\\appsettings.json",
-              "RelativeDocumentMoniker": "SeccionApi\\appsettings.json",
-              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\SeccionApi\\appsettings.json",
-              "RelativeToolTip": "SeccionApi\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-09T23:30:28.081Z"
+              "DocumentIndex": 4,
+              "Title": "MatriculaServices.cs",
+              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\Business\\Implementations\\MatriculaServices.cs",
+              "RelativeDocumentMoniker": "Business\\Implementations\\MatriculaServices.cs",
+              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\Business\\Implementations\\MatriculaServices.cs",
+              "RelativeToolTip": "Business\\Implementations\\MatriculaServices.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAcwAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T20:54:12.874Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "EstudianteController.cs",
+              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\SeccionApi\\Controllers\\EstudianteController.cs",
+              "RelativeDocumentMoniker": "SeccionApi\\Controllers\\EstudianteController.cs",
+              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\SeccionApi\\Controllers\\EstudianteController.cs",
+              "RelativeToolTip": "SeccionApi\\Controllers\\EstudianteController.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAwwEQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T20:48:12.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IEstudianteServices.cs",
+              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\Business\\Interfaces\\IEstudianteServices.cs",
+              "RelativeDocumentMoniker": "Business\\Interfaces\\IEstudianteServices.cs",
+              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\Business\\Interfaces\\IEstudianteServices.cs",
+              "RelativeToolTip": "Business\\Interfaces\\IEstudianteServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T18:02:27.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EstudianteServices.cs",
+              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\Business\\Implementations\\EstudianteServices.cs",
+              "RelativeDocumentMoniker": "Business\\Implementations\\EstudianteServices.cs",
+              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\Business\\Implementations\\EstudianteServices.cs",
+              "RelativeToolTip": "Business\\Implementations\\EstudianteServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGoAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T16:47:45.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\SeccionApi\\Program.cs",
+              "RelativeDocumentMoniker": "SeccionApi\\Program.cs",
+              "ToolTip": "C:\\Multiplataforma\\SeccionApi\\SeccionApi\\Program.cs",
+              "RelativeToolTip": "SeccionApi\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T22:54:55.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Multiplataforma\\SeccionApi\\SeccionApi\\Startup.cs",
               "RelativeDocumentMoniker": "SeccionApi\\Startup.cs",
               "ToolTip": "C:\\Multiplataforma\\SeccionApi\\SeccionApi\\Startup.cs",
               "RelativeToolTip": "SeccionApi\\Startup.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAQwC4AAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAC4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-07T23:54:52.339Z"
             }

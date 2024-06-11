@@ -1,5 +1,5 @@
 ﻿using Business.Interfaces;
-using Infrastructure.Models;
+using Core.ModelView;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -51,7 +51,7 @@ namespace SeccionApi.Controllers
 
         // POST api/<CarreraController>
         [HttpPost]
-        public async Task<ActionResult> Post(Carrera registro)
+        public async Task<ActionResult> Post(CarreraView registro)
         {
             try
             {
@@ -65,10 +65,9 @@ namespace SeccionApi.Controllers
             }
         }
 
-
         // PUT api/<CarreraController>/5
         [HttpPut("{Id}")]
-        public async Task<IActionResult> put(int Id, Carrera registro)
+        public async Task<IActionResult> put(int Id, CarreraView registro)
         {
             try
             {
@@ -82,6 +81,7 @@ namespace SeccionApi.Controllers
             }
 
         }
+
         // DELETE api/<CarreraController>/5
         [HttpDelete("{Id}")]
         public async Task<ActionResult> Delete(int Id)

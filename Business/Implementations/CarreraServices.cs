@@ -36,6 +36,7 @@ namespace Business.Implementations
             }
             return listaCarreraVievs;
         }
+
         public CarreraView Buscar(int Id)
         {
             var carrera = _dbcontext.Carreras.Find(Id);
@@ -52,37 +53,55 @@ namespace Business.Implementations
             return carreraView;
         }
 
-
-        public int Actualizar(int Codigo, Carrera registro)
+        public int Actualizar(int Codigo, CarreraView registro)
         {
             var carrera = _dbcontext.Carreras.Find(Codigo);
-            carrera.Codigo = registro.Codigo;
-            carrera.Nombre = registro.Nombre;
-            _dbcontext.SaveChanges();
-            return carrera.Codigo;
+            if (carrera == null)
+            {
+                throw new Exception("La carrera que intenta actualizar no existe");
+            }
+            else
+            {
+                carrera.Nombre = registro.Nombre;
+                _dbcontext.SaveChanges();
+                return carrera.Codigo;
+            }
         }
 
-        //asnotraquin
-        public int Agregar(Carrera Registro)
+        public int Agregar(CarreraView Registro)
         {
-            var item = new Carrera
+            var carrera = _dbcontext.Carreras.Find(Registro.Codigo); 
+            if (carrera != null)
             {
-                Codigo = Registro.Codigo,
-                Nombre = Registro.Nombre,
-            };
-            _dbcontext.Carreras.Add(item);
-            _dbcontext.SaveChanges();
+                throw new Exception("La carrera ya existe en la base de datos");
+            }
+            else
+            {
+                var item = new Carrera
+                {
+                    Codigo = Registro.Codigo,
+                    Nombre = Registro.Nombre,
+                };
+                _dbcontext.Carreras.Add(item);
+                _dbcontext.SaveChanges();
 
-            return item.Codigo;
-
+                return item.Codigo;
+            }
         }
 
         public int Eliminar(int Codigo)
         {
             var Carrera = _dbcontext.Carreras.Find(Codigo);
-            _dbcontext.Carreras.Remove(Carrera);
-            _dbcontext.SaveChanges();
-            return Codigo;
+            if (Carrera == null)
+            {
+                throw new Exception("La carrera que intenta eliminar no esta registrada en la base de datos");
+            }
+            else
+            {
+                _dbcontext.Carreras.Remove(Carrera);
+                _dbcontext.SaveChanges();
+                return Codigo;
+            }
         }
     }
 }

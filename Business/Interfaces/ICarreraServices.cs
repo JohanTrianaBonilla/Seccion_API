@@ -15,8 +15,8 @@ namespace Business.Interfaces
 
         public int Eliminar(int id);
 
-        public int Agregar(Carrera Registro);
+        public int Agregar(CarreraView Registro);
 
-        public int Actualizar(int Id, Carrera registro);
+        public int Actualizar(int Id, CarreraView registro);
     }
 }

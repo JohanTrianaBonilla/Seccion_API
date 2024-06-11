@@ -1,4 +1,6 @@
 ﻿using Business.Interfaces;
+using Core.ModelView;
+using Infrastructure.Models;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -29,38 +31,71 @@ namespace SeccionApi.Controllers
             }
         }
 
-
-
-        //// GET: api/<ClaseController>
-        //[HttpGet]
-        //public IEnumerable<string> Get()
-        //{
-        //    return new string[] { "value1", "value2" };
-        //}
-
         // GET api/<ClaseController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("{Id}")]
+        public async Task<IActionResult> GetById(int Id)
         {
-            return "value";
+            try
+            {
+                var item = _Clase.Buscar(Id);
+                if (item == null)
+                {
+                    return NotFound();
+                }
+                return Ok(item);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         // POST api/<ClaseController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult> Post(ClaseView registro)
         {
+            try
+            {
+                int clase = 0;
+                clase = _Clase.Agregar(registro);
+                return Ok(clase);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         // PUT api/<ClaseController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("{Id}")]
+        public async Task<IActionResult> put(int Id, ClaseView registro)
         {
+            try
+            {
+                int clase = 0;
+                clase = _Clase.Actualizar(Id, registro);
+                return Ok(clase);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         // DELETE api/<ClaseController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("{Id}")]
+        public async Task<ActionResult> Delete(int Id)
         {
+            try
+            {
+                int codigo = 0;
+                codigo = _Clase.Eliminar(Id);
+                return Ok(codigo);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

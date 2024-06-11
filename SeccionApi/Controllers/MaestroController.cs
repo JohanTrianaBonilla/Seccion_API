@@ -1,5 +1,6 @@
 ﻿using Business.Interfaces;
-using Infrastructure.Models;
+using Core.ModelView;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Win32;
 
@@ -52,7 +53,7 @@ namespace SeccionApi.Controllers
 
         // POST api/<MaestroController>
         [HttpPost]
-        public async Task<ActionResult> Post(Maestro registro)
+        public async Task<ActionResult> Post(MaestroWiew registro)
         {
             try
             {
@@ -66,10 +67,9 @@ namespace SeccionApi.Controllers
             }
         }
 
-
         // PUT api/<MaestroController>/5
         [HttpPut("{Id}")]
-        public async Task<IActionResult> put(String Id, Maestro registro)
+        public async Task<IActionResult> put(String Id, MaestroWiew registro)
         {
             try
             {

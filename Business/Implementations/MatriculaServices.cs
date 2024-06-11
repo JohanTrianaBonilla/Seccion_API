@@ -5,7 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Business.Implementations
 {
@@ -52,32 +51,49 @@ namespace Business.Implementations
             return matriculaWiew;
         }
 
-        public int Actualizar(int Id, Matricula registro)
+        public int Actualizar(int Id, MatriculaView registro)
         {
             var matricula = _dbcontext.Matriculas.Find(Id);
-            matricula.Id = registro.Id;
-            matricula.IdEstudiante = registro.IdEstudiante;
-            matricula.IdSeccion = registro.IdSeccion;
-            _dbcontext.SaveChanges();
-            return matricula.Id;
+            if(matricula == null)
+            {
+                throw new Exception("La matricula no existe en la base de datos para actualizar");
+            }
+            else
+            {
+                matricula.IdEstudiante = registro.IdEstudiante;
+                matricula.IdSeccion = registro.IdSeccion;
+                _dbcontext.SaveChanges();
+                return matricula.Id;
+            }
         }
 
-        public int Agregar(Matricula Registro)
+        public int Agregar(int Id, string IdEstudiante, string IdSeccion)
         {
-            var item = new Matricula
+            var matricula = _dbcontext.Matriculas.Find(Id); 
+            if(matricula != null)
             {
-                Id = Registro.Id,
-                IdSeccion = Registro.IdSeccion,
-                IdEstudiante = Registro.IdEstudiante,
-            };
-            _dbcontext.Matriculas.Add(item);
-            _dbcontext.SaveChanges();
-            return item.Id;
+                throw new Exception("La matricula ya existe en la base de datos");
+            }else
+            {
+                var item = new Matricula
+                {
+                    Id = Id,
+                    IdSeccion = IdSeccion,
+                    IdEstudiante = IdEstudiante,
+                };
+                _dbcontext.Matriculas.Add(item);
+                _dbcontext.SaveChanges();
+                return item.Id;
+            }
         }
 
         public int Eliminar(int Id)
         {
             var Matricula = _dbcontext.Matriculas.Find(Id);
+            if (Matricula == null)
+            {
+                throw new Exception("La matricula que intenta eliminar no existe en la base de datos");
+            }
             _dbcontext.Matriculas.Remove(Matricula);
             _dbcontext.SaveChanges();
             return Id;

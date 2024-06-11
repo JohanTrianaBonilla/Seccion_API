@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5qAGO8vQN3gnYBuH9hxzp87e/ap+1vuR6JYIBEUgCNktloTMHKi5RDj69uaLj8R4NXRn+M8UtlflSN8WWhqq7w==",
+  "dgSpecHash": "XkM1LinpigUvGxTxDfQs8KzqJVvcBJ+vZVKaeNWfZkTcThxNo+x4hcBwh6wXJHd+C6DO1Be/DztUv99QxjNWsg==",
   "success": true,
   "projectFilePath": "C:\\Multiplataforma\\SeccionApi\\SeccionApi\\SeccionApi.csproj",
   "expectedPackageFiles": [
@@ -52,7 +52,11 @@
     "C:\\Users\\ACER\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
-    "C:\\Users\\ACER\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\ACER\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.29\\microsoft.netcore.app.host.win-x64.6.0.29.nupkg.sha512"
   ],
   "logs": []
 }

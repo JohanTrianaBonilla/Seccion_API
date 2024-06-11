@@ -1,4 +1,5 @@
 ﻿using Business.Interfaces;
+using Core.ModelView;
 using Infrastructure.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -52,13 +53,14 @@ namespace SeccionApi.Controllers
 
         // POST api/<SeccionController>
         [HttpPost]
-        public async Task<ActionResult> Post(Seccione registro)
+        public async Task<ActionResult> Post(SeccionesView registro)
         {
+
             try
             {
-                String secciones = "";
-                secciones = _Seccion.Agregar(registro);
-                return Ok(secciones);
+                string seccion = "";
+                seccion = _Seccion.Agregar(registro);
+                return Ok(seccion);
             }
             catch (Exception ex)
             {
@@ -66,15 +68,17 @@ namespace SeccionApi.Controllers
             }
         }
 
+
+
         // PUT api/<SeccionController>/5
         [HttpPut("{Id}")]
-        public async Task<IActionResult> put(String Id, Seccione registro)
+        public async Task<IActionResult> put(String Id, SeccionesView registro)
         {
             try
             {
-                String seccion = "";
-                seccion = _Seccion.Actualizar(Id, registro);
-                return Ok(seccion);
+                
+                var seccionActualizada = _Seccion.Actualizar(Id, registro);
+                return Ok(seccionActualizada);
             }
             catch (Exception ex)
             {
